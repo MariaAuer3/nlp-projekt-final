@@ -8,9 +8,6 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# Stelle sicher, dass du Stopwords und WordNet-Data hast:
-# python -c "import nltk; nltk.download('stopwords'); nltk.download('wordnet'); nltk.download('omw-1.4')"
-
 CATEGORIES = ["Books", "Baby_Products", "Home_and_Kitchen"]
 # Regex-Tokenizer: nur alphanumerische Zeichen, keine Satzzeichen
 TOKENIZER   = RegexpTokenizer(r'\w+')
